@@ -1,0 +1,38 @@
+.mainheader__below-container__search {
+  width: 60vw;
+  display: block;
+}
+
+.mainheader__below-container__search input {
+  padding: 0.5rem;
+  border: 1px solid #4ad7d1;
+  width: 100%;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.main-nav__login {
+  padding: 0.3rem 0.7rem;
+  border: var(--clr-main-blue) solid 2px;
+  background-color: var(--clr-main-purple);
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1rem;
+  transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 var(--clr-main-blue);
+}
+
+.main-nav__login:hover {
+  color: white;
+  background-color: var(--clr-main-blue);
+  box-shadow: inset 100px 0 0 0 var(--clr-main-blue);
+}
+
+.main-nav__login a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav__login a:hover {
+  color: white;
+}

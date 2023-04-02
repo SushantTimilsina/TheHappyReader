@@ -1,0 +1,12 @@
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td {
+  border-top: 1px solid #dddddd;
+  text-align: left;
+  padding: 0.7rem;
+  vertical-align: top;
+}

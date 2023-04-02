@@ -1,0 +1,11 @@
+.main-slider__center__activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.main-slider__center__lastSlide {
+  transform: translateX(-100%);
+}
+.main-slider__center__nextSlide {
+  transform: translateX(100%);
+}

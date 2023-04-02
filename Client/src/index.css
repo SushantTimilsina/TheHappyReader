@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap");
+/* variables */
+
+:root {
+  --clr-main-purple: #001730;
+  --clr-main-blue: #4ad7d1;
+  --clr-main-black: #1e1e1e;
+  --clr-paragraph: #525252;
+}
+
+@layer base {
+  .table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+
+  .table thead {
+    @apply bg-primary text-white;
+  }
+
+  .table td,
+  .table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 0.8rem;
+  }
+
+  .table tbody > tr {
+    @apply hover:!bg-secondary hover:text-white;
+  }
+  .table tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.buttons {
+  padding: 1rem 0;
+  width: 8rem;
+  margin-bottom: 1rem;
+  background-color: var(--clr-main-purple);
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  transition: ease-out 0.5s;
+  border: none;
+}
+
+.buttons:hover {
+  background-color: var(--clr-main-blue);
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
