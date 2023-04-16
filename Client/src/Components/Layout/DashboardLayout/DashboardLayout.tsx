@@ -7,24 +7,7 @@ import { axiosInstance } from "utils/axiosInterceptors";
 
 const DashboardLayout = (props: any) => {
   const [showSidebar, setShowSidebar] = useState(false);
-  const navigate = useNavigate();
 
-  // only give acces  to admin user
-  // useEffect(() => {
-  //   const getUserProfile = async () => {
-  //     const headers = {
-  //       Authorization: `Bearer ${localStorage.getItem("Access-Token")}`,
-  //     };
-  //     const { data: user } = await axiosInstance.get(`/api/user/profile`, {
-  //       headers,
-  //     });
-  //     if (user?.role !== "admin") {
-  //       navigate("/");
-  //       return;
-  //     }
-  //   };
-  //   getUserProfile();
-  // }, [navigate]);
 
   return (
     <div>

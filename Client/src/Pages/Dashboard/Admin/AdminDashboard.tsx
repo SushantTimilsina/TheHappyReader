@@ -134,7 +134,7 @@ const AdminDashboard = () => {
 
       {/* chart container starts */}
       <div className="bg-white">
-        <BarChart
+        {/* <BarChart
           width={1000}
           height={400}
           data={data}
@@ -151,7 +151,7 @@ const AdminDashboard = () => {
             fill="#8884d8"
             // label={renderCustomBarLabel}
           />
-        </BarChart>
+        </BarChart> */}
       </div>
     </DashboardLayout>
   );

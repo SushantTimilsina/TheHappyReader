@@ -45,7 +45,7 @@ const Login = () => {
     if (user) {
       navigate(-1);
     }
-  }, [user, navigate]);
+  }, [user]);
 
   // clearing error message after few seconds
   useEffect(() => {
@@ -57,7 +57,7 @@ const Login = () => {
     }, 3000);
 
     return () => clearTimeout(errorTimeout);
-  }, [error, dispatch]);
+  }, [error]);
 
   // submitting the form
   const formSubmitHandler = useCallback(
@@ -67,7 +67,7 @@ const Login = () => {
 
       reset();
     },
-    [dispatch, reset]
+    []
   );
 
   return (

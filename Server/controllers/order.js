@@ -14,7 +14,7 @@ module.exports = {
           amount: await req.body.payment.payload.amount,
         },
         headers: {
-          Authorization: `Key test_secret_key_5c0b2fbe5910493f9b36edb74b5e741a`,
+          Authorization: `Key test_secret_key_2026656256d3454dbcc8cd14c5711717`,
           "Content-Type": "application/json",
         },
       });

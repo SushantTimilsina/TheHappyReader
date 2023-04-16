@@ -52,7 +52,7 @@ const Cart = () => {
   // Khalti Payment
   let config = {
     // replace this key with yours
-    publicKey: "test_public_key_e19fb8da793446d5b7c89211a3d691eb",
+    publicKey: "test_public_key_73c8e30a6aef46438d7344431c263668",
     productIdentity: "1234567890",
     productName: "Drogon",
     productUrl: "http://gameofthrones.com/buy/Dragons",

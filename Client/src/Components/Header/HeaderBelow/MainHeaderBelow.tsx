@@ -42,7 +42,7 @@ const MainHeaderBelow = () => {
       return;
     }
     dispatch(fetchUserProfile());
-  }, [dispatch, navigate]);
+  }, []);
 
   const userJwt = useMemo(() => localStorage.getItem("Access-Token"), []);
 
